@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
   let moneySpent = document.getElementById("moneySpent");
 
   let transactionInLocalStorage = JSON.parse(
-    localStorage.getItem("transactions")
+    localStorage.getItem("Transactions")
   );
   let transactions =
-    localStorage.getItem("transactions") !== null
+    localStorage.getItem("Transactions") !== null
       ? transactionInLocalStorage
       : [];
   function transactionAddOn(transaction) {
