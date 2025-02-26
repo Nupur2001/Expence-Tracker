@@ -26,26 +26,27 @@
       <div class="incomeAndExpense">
         <div class="income">
           <h2 class="heading">Income</h2>
-          <p class="balence">$0.00</p>
+          <p class="incomeBalence">$0.00</p>
         </div>
         <hr />
         <div class="expense">
           <h2 class="heading">Expense</h2>
-          <p class="balence">$0.00</p>
+          <p class="expenseBalence">$0.00</p>
         </div>
       </div>
 
       <div class="history">
         <h3>History</h3>
-        <ul>
-          <li class="box minus">Flower <span>-20</span><button class="deleteBtn"><i class="fa-solid fa-x"></i></button></li>
-          <li class="box plus">Salary <span>+200</span><button class="deleteBtn"><i class="fa-solid fa-x"></i></button></li>
+        <ul class="list">
+          <!-- <li class="minus">Flower <span>-20</span><button class="deleteBtn"><i class="fa-solid fa-x"></i></button></li>
+          <li class="plus">Salary <span>+200</span><button class="deleteBtn"><i class="fa-solid fa-x"></i></button></li> -->
+          <!-- <li></li> -->
         </ul>
       </div>
 
       <div class="transactionFormContainer">
         <h3>Add new transaction</h3>
-        <form>
+        <form class="form">
           <div class="transactionDesc">
             <label for="moneySpentOn">Description</label>
             <input
@@ -65,5 +66,7 @@
         </form>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
