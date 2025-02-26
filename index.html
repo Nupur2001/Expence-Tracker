@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Expense Tracker</h1>
+    <div class="expenseTrackerContainer">
+      <div class="incomeDetails">
+        <img src="https://i.ibb.co/jfScDTC/budget.png" alt="" />
+        <div class="detail">
+          <h2 class="heading">Your Balance</h2>
+          <h1 class="balence">$0.00</h1>
+        </div>
+      </div>
+      <div class="incomeAndExpense">
+        <div class="income">
+          <h2 class="heading">Income</h2>
+          <p class="balence">$0.00</p>
+        </div>
+        <hr />
+        <div class="expense">
+          <h2 class="heading">Expense</h2>
+          <p class="balence">$0.00</p>
+        </div>
+      </div>
+
+      <div class="history">
+        <h3>History</h3>
+        <ul>
+          <li class="box minus">Flower <span>-20</span><button class="deleteBtn"><i class="fa-solid fa-x"></i></button></li>
+          <li class="box plus">Salary <span>+200</span><button class="deleteBtn"><i class="fa-solid fa-x"></i></button></li>
+        </ul>
+      </div>
+
+      <div class="transactionFormContainer">
+        <h3>Add new transaction</h3>
+        <form>
+          <div class="transactionDesc">
+            <label for="moneySpentOn">Description</label>
+            <input
+              type="text"
+              id="moneySpentOn"
+              placeholder="Enter transaction"
+            />
+          </div>
+
+          <div class="transactionMoney">
+            <label for="moneySpent">Amount</label>
+            <p>(-100 = expense, 100 = income)</p>
+            <input type="text" id="moneySpent" placeholder="Enter money" />
+          </div>
+
+          <button class="submitBtn">Add transaction</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

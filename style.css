@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Sans", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ece9e9;
+}
+h1 {
+  color: #393a57;
+  margin: 10px;
+}
+.expenseTrackerContainer {
+  /* padding: 80px; */
+  padding: 0 55px;
+  max-width: 520px;
+  margin: 25px 0;
+  /* background-color: #dfdada; */
+}
+.balanceHeading {
+  text-transform: uppercase;
+  color: #393a57;
+  font-weight: 700;
+  font-size: 19px;
+}
+.incomeDetails {
+  gap: 20px;
+  display: flex;
+  font-family: inherit;
+}
+.incomeDetails img {
+  width: 8rem;
+}
+.heading {
+  color: #393a57;
+}
+
+.incomeAndExpense {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  border-radius: 5px;
+  /* width: 360px; */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.income .heading,
+.expense .heading {
+  color: #393a57;
+  text-transform: uppercase;
+}
+.income .balence {
+  color: #2ecc71;
+  font-size: 25px;
+}
+
+.expense .balence {
+  color: red;
+  font-size: 25px;
+}
+
+.incomeAndExpense hr {
+  width: 0px;
+  height: 80px;
+  display: inline-block;
+}
+
+hr {
+  color: #393a57;
+}
+.history {
+  width: 100%;
+}
+.history .box {
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 15px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #486ba6;
+  position: relative;
+}
+
+.history .box.plus {
+  border-left: 10px solid #2ecc71;
+}
+.history .box.minus {
+  border-left: 10px solid #c0392b;
+}
+
+.deleteBtn {
+  border: 0;
+  font-size: 22px;
+  line-height: 22px;
+  padding: 10px;
+  /* margin: 10px 0; */
+  position: absolute;
+  top: 62%;
+  right: 0;
+  transform: translate(100%, -62%);
+  transition: opacity 0.3s ease;
+  background-color: #c0392b;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 17px;
+  opacity: 0;
+}
+
+.history .box:hover .deleteBtn{
+opacity: 1;
+}
+.history h3,
+.transactionFormContainer h3 {
+  color: #393a57;
+  font-size: 25px;
+  border-bottom: 1px solid #80717f;
+  margin: 20px 0;
+}
+
+.transactionFormContainer label {
+  color: #393a57;
+  font-size: 20px;
+}
+
+.transactionFormContainer p {
+  color: #393a57;
+}
+input {
+  padding: 10px;
+  background-color: #fff;
+  width: 100%;
+  font-size: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.submitBtn {
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  background-color: #13168d;
+  color: white;
+  margin: 10px 0 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
