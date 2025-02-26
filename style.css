@@ -58,12 +58,12 @@ h1 {
   color: #393a57;
   text-transform: uppercase;
 }
-.income .balence {
+.incomeBalence {
   color: #2ecc71;
   font-size: 25px;
 }
 
-.expense .balence {
+.expenseBalence {
   color: red;
   font-size: 25px;
 }
@@ -80,7 +80,7 @@ hr {
 .history {
   width: 100%;
 }
-.history .box {
+.history li {
   border-radius: 10px;
   margin: 10px 0;
   padding: 15px;
@@ -92,10 +92,10 @@ hr {
   position: relative;
 }
 
-.history .box.plus {
+.history li.plus {
   border-left: 10px solid #2ecc71;
 }
-.history .box.minus {
+.history li.minus {
   border-left: 10px solid #c0392b;
 }
 
@@ -118,7 +118,7 @@ hr {
   opacity: 0;
 }
 
-.history .box:hover .deleteBtn{
+.history li:hover .deleteBtn{
 opacity: 1;
 }
 .history h3,
@@ -156,4 +156,9 @@ input {
   color: white;
   margin: 10px 0 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+
+  &:hover{
+    background-color: #191ba1;
+  }
 }
